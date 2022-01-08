@@ -21,7 +21,6 @@
     "@terra-money/terra.js": "^3.0.2",
     "colors": "^1.4.0",
     "decimal.js": "^10.3.1",
-    "dotenv": "^10.0.0",
     "inquirer": "^8.2.0"
   }
 }

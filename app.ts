@@ -1,13 +1,3 @@
-import {
-  isTxError,
-  LCDClient,
-  MnemonicKey,
-  MsgSwap,
-  Coin,
-  MsgExecuteContract,
-  Coins
-} from '@terra-money/terra.js';
-
 import config from './config';
 
 import colors from 'colors/safe';
@@ -19,28 +9,11 @@ import { getWalletBalance,
   simulateLunatoBlunaSwap,
   start } from './src/scripts';
 
-import {
-  SwapLunaToBlunaSimulationQueryMessage,
-  SwapLunaToBlunaSimulationResponse,
-  SwapBlunaToLunaSimulationQueryMessage,
-  SwapBlunaToLunaSimulationResponse,
-  SwapSimulationContractResponse,
-  BlunaBalanceQueryMessage,
-  BlunaBalanceResponse,
-  SwapLunaHandleMessage
-} from './src/types/index';
-import { calculatePercentageGain, calculatePercentageLoss, calculatePrice, terra, toMacro, toMicro, toMiliseconds } from './src/helpers';
+import { toMacro } from './src/helpers';
 
 
 
 const main = async () => {
-
-  // Crear/Restaurar Wallet
-  const mk = new MnemonicKey({
-    mnemonic: config.wallet.mnemonic,
-  });
-  const wallet = terra.wallet(mk);
-
   let opt;
   opt = await inquirerMenu();
 
