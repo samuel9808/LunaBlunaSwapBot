@@ -7,3 +7,7 @@ Para usar el bot, seguir los siguientes pasos:
 3. Correr el script con `npm start`.
 4. Verificar balance de la cartera y precios actuales(Opcional).
 5. Una vez todo verificado, seleccionar la opcion de Comenzar Swap.
+
+Se utilizaron estos bots como referencia: <br>
+*https://github.com/AaronCQL/bluna-bot<br>
+https://github.com/foolproof/terra-luna-bluna-swap-bot*
